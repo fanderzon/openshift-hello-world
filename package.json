@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-ex",
+  "version": "0.0.1",
+  "description": "Node.js sample app for OpenShift 3",
+  "main": "src/index.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atgse/casino-backoffice.git"
+  },
+  "author": "Fredrik Andersson <f.anderzon@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/atgse/casino-backoffice/issues"
+  },
+  "homepage": "https://github.com/atgse/casino-backoffice"
+}
