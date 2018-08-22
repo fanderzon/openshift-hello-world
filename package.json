@@ -1,25 +1,23 @@
 {
-  "name": "nodejs-ex",
-  "version": "0.0.1",
-  "description": "Node.js sample app for OpenShift 3",
+  "name": "openshift-hello-world",
+  "version": "1.0.0",
+  "description": "",
   "main": "src/index.js",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.16.3"
   },
-  "engine": {
-    "node": "*",
-    "npm": "*"
-  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node src/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/atgse/casino-backoffice.git"
+    "url": "git+https://github.com/fanderzon/openshift-hello-world.git"
   },
-  "author": "Fredrik Andersson <f.anderzon@gmail.com>",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/atgse/casino-backoffice/issues"
+    "url": "https://github.com/fanderzon/openshift-hello-world/issues"
   },
-  "homepage": "https://github.com/atgse/casino-backoffice"
+  "homepage": "https://github.com/fanderzon/openshift-hello-world#readme"
 }
