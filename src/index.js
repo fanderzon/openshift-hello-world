@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     .then(addToNumber)
     .then(updateCount)
     .then(count => res.send(`Hello visitor number ${count}`))
-    .catch(err => res.send(`${err}`));
+    .catch(err => res.send(`something went wrong`));
 });
 
 app.listen(port, () => console.log(`App running on http://${ip}:${port}/`));
