@@ -4,6 +4,7 @@
   "description": "Node.js sample app for OpenShift 3",
   "main": "src/index.js",
   "dependencies": {
+    "aws-sdk": "^2.300.0",
     "express": "^4.13.4"
   },
   "engine": {
