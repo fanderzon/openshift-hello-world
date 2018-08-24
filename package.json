@@ -15,11 +15,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/atgse/casino-backoffice.git"
+    "url": "https://github.com/fanderzon/openshift-hello-world.git"
   },
   "author": "Fredrik Andersson <f.anderzon@gmail.com>",
   "bugs": {
-    "url": "https://github.com/atgse/casino-backoffice/issues"
+    "url": "https://github.com/fanderzon/openshift-hello-world/issues"
   },
-  "homepage": "https://github.com/atgse/casino-backoffice"
+  "homepage": "https://github.com/fanderzon/openshift-hello-world"
 }

@@ -5,6 +5,7 @@ const app = express();
 
 const port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
 const ip = process.env.IP || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+const bucket_name = process.env.test_bucket_name || 'bucket';
 const DATA_PATH = path.join('/', 'data');
 const VISIT_COUNT_FILE = path.join(DATA_PATH, 'visit_count');
 
@@ -12,7 +13,7 @@ app.get('/', (req, res) => {
   return getCount()
     .then(addToNumber)
     .then(updateCount)
-    .then(count => res.send(`Hello visitor number ${count}`))
+    .then(count => res.send(`Hello visitor number ${count}<br />Your files are in ${bucket_name}`))
     .catch(err => res.send(`something went wrong`));
 });
 
