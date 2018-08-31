@@ -9,7 +9,7 @@ AWS.config.secretAccessKey = process.env.test_user_secret_key;
 AWS.config.region = 'eu-west-1';
 const s3 = new AWS.S3({ apiVersion: '2006-03-01' });
 const bucket_name = process.env.test_bucket_name || 'bucket';
-const files = ['categories', 'games', 'collections', 'tags'];
+const files = ['categories', 'games', 'collections', 'tags', 'users'];
 
 function getFromS3(name){
   return new Promise((resolve, reject) => {
