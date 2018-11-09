@@ -13,7 +13,7 @@
     "npm": "*"
   },
   "scripts": {
-    "build": "pm2 start src/index.js"
+    "start": "pm2 start src/index.js"
   },
   "repository": {
     "type": "git",

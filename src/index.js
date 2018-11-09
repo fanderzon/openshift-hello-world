@@ -16,13 +16,13 @@ app.get('/', (req, res) => {
     .then(addToNumber)
     .then(updateCount)
     .then(count => res.send(`Hello visitor number ${count}`))
-    .catch(err => res.send(err));
+    .catch(err => res.send('Something went wrong'));
 });
 
 app.get('/copy-db-files', (req, res) => {
   return copyDbFilesFromS3()
     .then(() => res.send('DB files have been copied from s3 and written to /data dir'))
-    .catch(err => res.send(err));
+    .catch(err => res.send('Something went wrong'));
 });
 
 app.listen(port, () => console.log(`App running on http://${ip}:${port}/`));
