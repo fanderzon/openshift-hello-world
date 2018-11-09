@@ -5,8 +5,7 @@
   "main": "src/index.js",
   "dependencies": {
     "aws-sdk": "^2.300.0",
-    "express": "^4.13.4",
-    "pm2": "3.2.2"
+    "express": "^4.13.4"
   },
   "engine": {
     "node": "*",
@@ -14,7 +13,7 @@
   },
   "scripts": {
     "build": "npm run start",
-    "start": "pm2 start src/index.js"
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
