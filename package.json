@@ -12,7 +12,7 @@
     "npm": "*"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "build": "node src/index.js"
   },
   "repository": {
     "type": "git",
