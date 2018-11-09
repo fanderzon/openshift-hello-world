@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 app.get('/copy-db-files', (req, res) => {
   return copyDbFilesFromS3()
     .then(() => res.send('DB files have been copied from s3 and written to /data dir'))
-    .catch(err => res.send(`something went wrong`));
+    .catch(err => res.send(err));
 });
 
 app.listen(port, () => console.log(`App running on http://${ip}:${port}/`));
