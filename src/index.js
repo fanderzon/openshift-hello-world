@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
     .then(addToNumber)
     .then(updateCount)
     .then(count => res.send(`Hello visitor number ${count}`))
-    .catch(err => res.send(`something went wrong`));
+    .catch(err => res.send(err));
 });
 
 app.get('/copy-db-files', (req, res) => {
